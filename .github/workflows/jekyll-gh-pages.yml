@@ -61,3 +61,5 @@ jobs:
         uses: actions/deploy-pages@v2
         with:
           artifact_name: github-pages # Explicitly specify the artifact name
+          path: ./_site
+          

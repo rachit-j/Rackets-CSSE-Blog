@@ -1,4 +1,3 @@
-# Sample workflow for building and deploying a Jekyll site to GitHub Pages
 name: Deploy Jekyll Site
 
 on:
@@ -25,7 +24,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1 # Adjust Ruby version as needed
+          ruby-version: 3.1
           bundler-cache: true
 
       - name: Install Jekyll and Dependencies
@@ -35,6 +34,9 @@ jobs:
 
       - name: Build Jekyll Site
         run: bundle exec jekyll build --destination _site
+
+      - name: List Jekyll Build Output
+        run: ls -la ./_site
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4

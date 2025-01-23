@@ -1,0 +1,56 @@
+<header>
+  <style>
+     .nav {
+       background-color: #222222; 
+       list-style-type: none;
+       text-align: center;
+       margin: 0;
+       padding: 20;
+     }
+     
+     .nav li {
+       display: inline-flex;
+       font-size: 20px;
+       padding: 20px;
+     }
+     
+     .nav li a {
+       color: #F5F5F5;
+       text-decoration: none;
+     }
+     
+     .nav li a:hover {
+       color: #CCCCCC;
+     }
+     
+     .button {
+       border: none;
+       color: #F5F5F5;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       cursor: pointer;
+       padding: 10px 20px;
+       background-color: #222222;
+       border-radius: 4px;
+       transition: background-color 0.3s;
+     }
+     
+     .button:hover {
+       background-color: #333333;
+     }
+  </style>
+ 
+  <div id="header">
+     <nav>
+       <ul class="nav">
+         <li class="fork"><a href="{{site.baseurl}}/">Home</a></li>
+         <li class="fork"><a href="{{site.baseurl}}/blogs">Blogs</a></li>
+         <li class="title"><a href="{{ site.github.repository_url }}#readme">View On GitHub</a></li>
+         <li class="fork"><a href="{{site.baseurl}}/game">Game</a></li>
+         <li class="fork"><a href="{{site.baseurl}}/calculator">Calculator</a></li>
+         <li class="fork"><a href="{{site.baseurl}}/labnotebook">Lab Notebook</a></li>
+       </ul>
+     </nav>
+  </div><!-- end header -->
+ </header>
